@@ -495,19 +495,26 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
-
-
-chmod 755 strcomp.sh
- 
-./strcomp.sh 
 ## OUTPUT
-
+~~~
+val1=baseball
+ val2=hockey
+ if [ $val1 \> $val2 ]
+ then
+ echo "$val1 is greater than $val2"
+ else
+ echo "$val1 is less than $val2"
+ fi
+chmod 755 strcomp.sh
+./strcomp.sh
+~~~
+## OUTPUT
+baseball is less than hockey
 
 # check file ownership
 cat < psswdperm.sh 
-```bash
+```
+bash
 \#!/bin/bash
 if [ -O /etc/passwd ]
 then
